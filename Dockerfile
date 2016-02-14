@@ -4,7 +4,7 @@ RUN echo "deb [arch=amd64] http://www.ubnt.com/downloads/unifi-video/apt wheezy 
 
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 97B46B8582C6571E
 
-RUN apt-get update && apt-get install -y unifi-video
+RUN apt-get update && apt-get install -y supervisor unifi-video
 
 VOLUME /var/lib/unifi-video
 VOLUME /var/log/unifi-video
